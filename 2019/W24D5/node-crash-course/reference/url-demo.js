@@ -29,6 +29,3 @@ console.log(myUrl.searchParams);
 
 // Loop through params
 myUrl.searchParams.forEach((value, name) => console.log(`${name}: ${value}` ));
-
-// var a = new URL("/", "https://developer.mozilla.org");
-// console.log(a.href);
