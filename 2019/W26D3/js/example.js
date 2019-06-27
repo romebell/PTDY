@@ -1,5 +1,5 @@
 // Create variables for the welcome page
-let greeting = 'Howdy';
+let greeting = 'Howdy ';
 let name = 'Jenny';
 let message = ', please check your order';
 // Concatenate the three variables above to create the welcome message
