@@ -20,8 +20,6 @@ class TextEditor {
 }
 
 
-
-
  // DON'T EDIT THIS SOLUTION FUNCTION
 const solution = operations => {
   const parseOperations = operations => JSON.parse(operations.replace('"', '"'));
@@ -89,8 +87,6 @@ class TextEditor {
   }
     
 }
-
-
 
 
  // DON'T EDIT THIS SOLUTION FUNCTION
