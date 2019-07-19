@@ -41,13 +41,22 @@ function bookingStartDate(bookings, stayLength, currentDate) {
     let checkIn = Number(bookings[i].split(':')[0]);
     let checkOut = Number(bookings[i].split(':')[1]);
     
+    console.log(checkIn);
+    console.log(checkOut);
+    
     for (let j = checkIn; j < checkOut; i++) {
       if (currentDate < j) return null;
+      else if (currentDate < j) {
+        lastDate = j;
+        continue;
+      }
     }
   }
-
+  
   return result;
  }
+
+ bookingStartDate(bookings, stayLength, currentDate);
 
  // if (currentDate >= checkIn || currentDate )
  // checkIn === currentDate
