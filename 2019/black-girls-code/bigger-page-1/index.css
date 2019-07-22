@@ -7,9 +7,39 @@
 body {
   background-color: blue;
   font-size: 2em;
+  background-image:radial-gradient(pink, purple, black);
+  font-family: 'News Cycle', cursive;
 }
 
 ul {
   background: white;
   list-style-type: circle;
+}
+
+li a {
+  color: green;
+}
+
+#rome a:hover {
+  color: red;
+}
+
+#zoma a:hover {
+  color: purple;
+}
+
+.center {
+  text-align: center;
+}
+
+.center img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+h1, h2, h3, h4 {
+  border-color: white;
+  border-style: dotted;
+  border-radius: 10px;
 }
