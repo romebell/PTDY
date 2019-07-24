@@ -1,0 +1,19 @@
+body {
+  background-color: pink;
+  font-size: 2em;
+}
+
+ul {
+  background-color: red;
+}
+
+li {
+  margin: 1em;
+  list-style-type:decimal-leading-zero;
+}
+
+* {
+  border-color: red;
+  border-style: dashed;
+  border-width: thick;
+}
