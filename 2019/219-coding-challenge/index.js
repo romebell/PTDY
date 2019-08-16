@@ -16,7 +16,7 @@ console.log('-----------------------------');
 
 function ingestFamilyTree(csvRows, today) {
   const array = csvToObj(csvRows);
-  let ages = [];
+  let dateOfBirth = [];
   let result = [];
 
   for (let i = 0; i < array.length; i++) {
@@ -24,16 +24,16 @@ function ingestFamilyTree(csvRows, today) {
     const birth = obj['birth'];
     const death = obj['death'];
     obj['age'] = ageInDays(birth, death, today);
-    ages.push(obj.birth);
+    dateOfBirth.push(obj.birth);
     obj['descendants'] = 0;
   }
 
-  ages = ages.sort();
-  for (let i = 0; i < ages.length; i++) {
-    let age = ages[i];
+  dateOfBirth = dateOfBirth.sort();
+  for (let i = 0; i < dateOfBirth.length; i++) {
+    let date = dateOfBirth[i];
     for (let j = 0; j < array.length; j++) {
       let person = array[j];
-      if (age === person.birth) {
+      if (date === person.birth) {
         result.push(person);
       }
     }
