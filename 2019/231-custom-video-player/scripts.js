@@ -64,10 +64,10 @@ let mousedown = false;
 progress.addEventListener('click', scrub);
 // Advance way to listen when 'mousemove' 
 // progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
-progress.addEventListener('mousemove', () => {
+progress.addEventListener('mousemove', (e) => {
   if (mousedown) {
-    scrub()
+    scrub(e)
   }
 });
-progress.addEventListener('mousedown', mousedown = true);
-progress.addEventListener('mouseup', mousedown = false);
+progress.addEventListener('mousedown', () => mousedown = true);
+progress.addEventListener('mouseup', () => mousedown = false);
